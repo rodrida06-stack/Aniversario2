@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Feliz Aniversario 💖</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: white;
+}
+
+.container {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.heart {
+    font-size: 50px;
+    animation: latido 1s infinite;
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #ff6f91;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffe3ec;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Feliz Aniversario Mi Amor 💕</h1>
+    <div class="heart">❤️</div>
+
+    <p>
+        Hoy celebramos nuestro amor,  
+        cada momento contigo es mi favorito.  
+        Gracias por hacerme tan feliz 💖
+    </p>
+
+    <button onclick="mostrarMensaje()">Haz clic aquí 💌</button>
+
+    <p id="mensaje" style="display:none; margin-top:20px;">
+        Eres lo mejor que me ha pasado.  
+        Te amo muchísimo 💕
+    </p>
+</div>
+
+<script>
+function mostrarMensaje() {
+    document.getElementById("mensaje").style.display = "block";
+}
+</script>
+
+</body>
+</html>
